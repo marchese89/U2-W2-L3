@@ -1,0 +1,23 @@
+$sizes-map: (
+  sm: 10px,
+  normal: 12px,
+  md: 16px,
+  lg: 24px,
+  xl: 30px,
+  xxl: 40px,
+);
+
+@each $breakpoint, $value in $sizes-map {
+  .margin-inline-#{$breakpoint} {
+    margin: $value;
+  }
+  .margin-block-#{$breakpoint} {
+    margin: $value;
+  }
+  .padding-inline-#{$breakpoint} {
+    padding: $value;
+  }
+  .padding-block-#{$breakpoint} {
+    padding: $value;
+  }
+}

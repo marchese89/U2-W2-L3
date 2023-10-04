@@ -1,0 +1,32 @@
+.top{
+    display: flex;
+     img{
+        height: 3em;
+        border-radius: 50%;
+        border: 2px solid lightgreen;
+     }
+     ul{
+        display: flex;
+        li{
+            cursor: pointer;
+        }
+     }
+}
+
+h1{
+    @include title-big;
+    text-align: center;
+    display: block
+}
+
+.buttons{
+    text-align: center;
+}
+
+.hero{
+    background-color: $bg_hero;
+    text-align: center;
+    p{
+        width: 30%;
+    }
+}

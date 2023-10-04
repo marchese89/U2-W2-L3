@@ -1,0 +1,13 @@
+@each $color,$value in $buttons-map{
+    .#{$color}-button{
+        background-color: $value;
+        border: 0;
+        color: white;
+        border-radius: 5px;
+        transition: all 0.5s linear;
+        &:hover{
+            opacity: 0.5;
+            cursor: pointer;
+        }
+    }
+}
